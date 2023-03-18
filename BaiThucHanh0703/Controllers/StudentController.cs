@@ -4,6 +4,7 @@ namespace BaiThucHanh0703.Controllers
 {
     public class StudentController : Controller
     {
+
         public IActionResult Index()
         {
             return View();
@@ -29,11 +30,12 @@ namespace BaiThucHanh0703.Controllers
             ViewBag.Tinhtong ="Tong cac chu so cua so "+Number +"=" +tong;
             return View();
         }
+
          public IActionResult Giaiptb2()
         {
             return View();
         }
-        [HttpPost]
+         [HttpPost]
          public IActionResult Giaiptb2(string hesoA, string hesoB, string hesoC)
         {
             //khai bao bien
