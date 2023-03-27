@@ -1,36 +1,35 @@
 using Microsoft.AspNetCore.Mvc;
+using BaiThucHanh0703.Models;
+using BaiThucHanh0703.Models.Process;
 
 namespace BaiThucHanh0703.Controllers
 {
     public class StudentController : Controller
     {
-
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Create(Student std)
+        {
+            string trave = std.StudentCode + "-" + std.StudentName + "- " + std.Address;
+            ViewBag.m = trave;
+            return View();
+        }
         public IActionResult Index()
         {
             return View();
         }
         [HttpPost]
-         public IActionResult Index(string FullName)
+         public IActionResult Index(string FullName, string PhoneNumber)
         {
-            string strReturn = "Hello " + FullName;
+            string strReturn = "Hello " + FullName + "-" +PhoneNumber;
             //gui du lieu ve view
             ViewBag.thongbao = strReturn;
             return View();
             //tra ve danh sach cac sinh vien trong Database
         }
-         public IActionResult Tinhtong(string Number)
-        {
-            int so = Convert.ToInt32(Number);
-            int tong = 0;
-            while(so > 0)
-            {
-                tong = tong + so%10;
-                so = so/10;
-            }
-            ViewBag.Tinhtong ="Tong cac chu so cua so "+Number +"=" +tong;
-            return View();
-        }
-
          public IActionResult Giaiptb2()
         {
             return View();

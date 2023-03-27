@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using BaiThucHanh0703.Models;
+using BaiThucHanh0703.Models.Process;
 
 namespace BaiThucHanh0703.Controllers
 {
@@ -17,9 +19,16 @@ namespace BaiThucHanh0703.Controllers
             return View();
             //tra ve danh sach cac sinh vien trong Database
         }
-         public IActionResult About()
+        public IActionResult Create()
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult Create(Employee emp)
+        {
+            string kq = emp.EmployeeCode + "-" + emp.EmployeeName + "- " + emp.Address;
+            ViewBag.mess = kq;
+            return View(); 
         }
     }
 
