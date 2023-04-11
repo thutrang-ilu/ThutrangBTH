@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using BaiThucHanh0703.Models;
-using BaiThucHanh0703.Models.Process;
 
 namespace BaiThucHanh0703.Controllers
 {

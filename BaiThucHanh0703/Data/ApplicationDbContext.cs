@@ -6,7 +6,9 @@ namespace BaiThucHanh0703.Data;
     {
         public ApplicationDbContext (DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-
         }
         public DbSet<Student> Students {get; set;}
+        public DbSet<Employee> Employee { get; set; }
+        public DbSet<BaiThucHanh0703.Models.Person> Person { get; set; } = default!;
+
     }

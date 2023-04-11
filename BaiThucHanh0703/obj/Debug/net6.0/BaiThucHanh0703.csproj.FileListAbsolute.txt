@@ -73,3 +73,8 @@ C:\Users\Asus\Desktop\BTH\BaiThucHanh0703\bin\Debug\net6.0\runtimes\win-x64\nati
 C:\Users\Asus\Desktop\BTH\BaiThucHanh0703\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Asus\Desktop\BTH\BaiThucHanh0703\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Asus\Desktop\BTH\BaiThucHanh0703\obj\Debug\net6.0\BaiThucHanh0703.csproj.CopyComplete
+C:\Users\Asus\Desktop\BTH\BaiThucHanh0703\obj\Debug\net6.0\staticwebassets\msbuild.BaiThucHanh0703.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Asus\Desktop\BTH\BaiThucHanh0703\obj\Debug\net6.0\staticwebassets\msbuild.build.BaiThucHanh0703.props
+C:\Users\Asus\Desktop\BTH\BaiThucHanh0703\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.BaiThucHanh0703.props
+C:\Users\Asus\Desktop\BTH\BaiThucHanh0703\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.BaiThucHanh0703.props
+C:\Users\Asus\Desktop\BTH\BaiThucHanh0703\obj\Debug\net6.0\staticwebassets.pack.json

@@ -1,12 +1,43 @@
-<form class="w3-container w3-card-4 w3-light-grey" asp-action="Creat">
-  <label>Person Code: </label> 
-  <input class="w3-input w3-border w3-round-large" type="text" name="PersonCode">
-  <br>
-  <label>Person Name: </label> 
-  <input class="w3-input w3-border w3-round-large" type="text" name="PersonName">
-  <br>
-  <label>Address: </label> 
-  <input class="w3-input w3-border w3-round-large" type="text" name="Address">
-  <input type="submit" value="Send">
-</form> 
-<h2>@ViewBag.mess</h2>
+@model BaiThucHanh0703.Models.Person
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Person</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PersonID" class="control-label"></label>
+                <input asp-for="PersonID" class="form-control" />
+                <span asp-validation-for="PersonID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonName" class="control-label"></label>
+                <input asp-for="PersonName" class="form-control" />
+                <span asp-validation-for="PersonName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonPhone" class="control-label"></label>
+                <input asp-for="PersonPhone" class="form-control" />
+                <span asp-validation-for="PersonPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
